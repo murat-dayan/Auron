@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.implementation
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -44,6 +46,14 @@ android {
 }
 
 dependencies {
+
+    implementation (project(":feature-virtues"))
+    implementation (project(":feature-habits"))
+    implementation (project(":feature-journal"))
+    implementation (project(":feature-profile"))
+    implementation (project(":core-ui"))
+    implementation (project(":core-data"))
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

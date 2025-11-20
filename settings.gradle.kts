@@ -21,3 +21,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "Auron"
 include(":app")
+include(":feature-virtues")
+include(":feature-habits")
+include(":feature-journal")
+include(":feature-profile")
+include(":core-ui")
+include(":core-data")
