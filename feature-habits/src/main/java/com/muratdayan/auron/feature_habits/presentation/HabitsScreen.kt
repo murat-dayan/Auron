@@ -13,6 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.muratdayan.auron.core_ui.ui.AuronCenteredText
+import com.muratdayan.auron.feature_habits.ui.components.HabitCard
 
 @Composable
 fun HabitsScreen(
@@ -25,6 +26,12 @@ fun HabitsScreen(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        HabitCard(
+            progress = 0.5f,
+            title = "Auron",
+            onComplete = {},
+            onEdit = {}
+        )
         Text("Habits")
         Spacer(modifier = Modifier.height(24.dp))
         Button(onClick = onNavigateToVirtues) { Text("Go Virtues") }
