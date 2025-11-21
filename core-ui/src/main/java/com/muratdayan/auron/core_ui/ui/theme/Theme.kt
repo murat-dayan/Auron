@@ -1,6 +1,5 @@
-package com.muratdayan.auron.ui.theme
+package com.muratdayan.auron.core_ui.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -272,7 +271,7 @@ fun AuronTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = AppTypography,
         content = content
     )
 }

@@ -1,4 +1,4 @@
-package com.muratdayan.auron.ui.theme
+package com.muratdayan.auron.core_ui.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
