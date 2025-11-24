@@ -1,11 +1,14 @@
-package com.muratdayan.auron.feature_habits.navigation
+    package com.muratdayan.auron.feature_habits.navigation
 
-import androidx.navigation3.runtime.NavKey
-import kotlinx.serialization.Serializable
-
-@Serializable
-sealed interface HabitsKey: NavKey {
+    import androidx.navigation3.runtime.NavKey
+    import kotlinx.serialization.Serializable
 
     @Serializable
-    data object HabitsMain: HabitsKey
-}
+    sealed interface HabitsKey: NavKey {
+
+        @Serializable
+        data object HabitsMain: HabitsKey
+
+        @Serializable
+        data object AddHabit: HabitsKey
+    }

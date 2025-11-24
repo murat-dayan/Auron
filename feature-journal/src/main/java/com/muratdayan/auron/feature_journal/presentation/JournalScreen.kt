@@ -11,7 +11,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.muratdayan.auron.core_ui.ui.AuronCenteredText
 
 @Composable
 fun JournalScreen(

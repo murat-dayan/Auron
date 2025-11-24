@@ -1,4 +1,4 @@
-package com.muratdayan.auron.feature_profile.presentation
+package com.muratdayan.auron.feature_habits.presentation
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -11,13 +11,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.muratdayan.auron.core_ui.ui.AuronText
 
 @Composable
-fun ProfileScreen(
-    onBack: () -> Unit,
+fun  AddHabitScreen(
+    onBack : () -> Unit
 ){
     Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
-        Text("Profile Screen")
+        Text("Add Habit Screen")
         Spacer(Modifier.height(16.dp))
         Button(onClick = onBack) { Text("Back") }
     }
